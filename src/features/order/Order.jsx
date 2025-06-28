@@ -1,10 +1,12 @@
 // Test ID: IIDSAT
-
-import { useFetcher, useLoaderData } from 'react-router-dom';
-import { getOrder } from '../../services/apiRestaurant';
-import { formatCurrency, calcMinutesLeft, formatDate } from '../../utilities/helpers';
-import OrderItem from './OrderItem';
 import { useEffect } from 'react';
+import { useFetcher, useLoaderData } from 'react-router-dom';
+
+import { getOrder } from '../../services/apiRestaurant';
+
+import { formatCurrency, calcMinutesLeft, formatDate } from '../../utilities/helpers';
+
+import OrderItem from './OrderItem';
 import UpdateOrder from './UpdateOrder';
 
 function Order() {

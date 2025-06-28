@@ -1,6 +1,8 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import { getTotalCartQuantity, getTotalCartPrice } from './cartSlice';
+
 import { formatCurrency } from '../../utilities/helpers';
 
 function CartOverview() {
@@ -8,7 +10,7 @@ function CartOverview() {
 
   const totalCartPrice = useSelector(getTotalCartPrice);
 
-  if (!totalCartQuantity) return null; 
+  if (!totalCartQuantity) return null;
 
   return (
     <div className="sticky bottom-0 flex items-center justify-between bg-stone-800 px-4 py-4 text-sm text-stone-200 uppercase sm:px-6 md:text-base">
